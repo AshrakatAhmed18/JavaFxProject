@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #1d3557;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="price" layoutX="437.0" layoutY="36.0" onAction="#ActionPrice" prefHeight="33.0" prefWidth="156.0" promptText="PRICE">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="TypeOfCar" layoutX="14.0" layoutY="36.0" onAction="#ActionType" prefHeight="33.0" prefWidth="163.0" promptText="TYPE OF CAR">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="Color" layoutX="14.0" layoutY="113.0" onAction="#ActionColor" prefHeight="33.0" prefWidth="163.0" promptText="COLOR">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="Model" layoutX="430.0" layoutY="113.0" onAction="#ActionModel" prefHeight="33.0" prefWidth="163.0" promptText="MODEL">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="Speed" layoutX="222.0" layoutY="113.0" onAction="#ActionSpeed" prefHeight="23.0" prefWidth="156.0" promptText="SPEED">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </TextField>
+      <Button fx:id="Add" layoutX="463.0" layoutY="253.0" mnemonicParsing="false" onAction="#ActionAdd" prefHeight="47.0" prefWidth="97.0" text="ADD" textFill="#1d3557">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="Txt" layoutX="10.0" layoutY="327.0" onDragDetected="#ActionNotes" prefHeight="61.0" prefWidth="582.0" promptText="NOTES">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </TextArea>
+      <ImageView fx:id="Image" fitHeight="150.0" fitWidth="200.0" layoutX="26.0" layoutY="161.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Volkswagen.jpg" />
+         </image>
+      </ImageView>
+      <ChoiceBox fx:id="Manual" layoutX="225.0" layoutY="40.0" onDragDetected="#ActionChoice" prefWidth="150.0" />
+   </children>
+</Pane>
